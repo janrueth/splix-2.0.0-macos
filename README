@@ -1,1 +1,22 @@
+This is based on splix-2.0.0 (see initial commit).
+
+I've modified this to compile on MacOS 12.3.
+I tested it using a M1 Macbook Air and a Samsung ML-1520.
+
+You probably need to install the xcode command line utils:
+xcode-select --install
+
+In case your printer needs jbig:
+brew install jbigkit
+
+make
+sudo make install
+
+To compile without jbig:
+make DISABLE_JBIG=1
+sudo make install
+
+
+Original README:
+
 Check INSTALL :o)
