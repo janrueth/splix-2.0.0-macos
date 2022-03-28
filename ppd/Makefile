@@ -15,7 +15,7 @@ XEROX		:= ph3115 ph3116 ph3117 ph3120 ph3121 ph3122 ph3130 ph3150 \
 DRIVERSEXT	:= ppd
 POEXT		:= po
 PODIR		:= po
-LANGUAGES 	:= fr pt
+LANGUAGES 	:= 
 ifeq ($(DISABLE_JBIG),0)
 SAMSUNG 	+= clp200 clp300 clp600 clx216x clx2170 clx3160
 XEROX		+= ph6110
