@@ -34,6 +34,12 @@ rastertoqpdl_LIBS	:= `cups-config --libs` -lcupsimage
 pstoqpdl_LDFLAGS	:= `cups-config --ldflags`
 pstoqpdl_LIBS		:= `cups-config --libs` -lcupsimage
 
+ifeq ($(ARCHI),Darwin)
+CXXFLAGS		+= -I`brew --prefix`/include
+rastertoqpdl_LDFLAGS += -L`brew --prefix`/lib
+pstoqpdl_LDFLAGS	+= -L`brew --prefix`/lib
+endif
+
 
 # Update compilation flags with defined options
 ifneq ($(DISABLE_THREADS),0)
