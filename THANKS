@@ -1,0 +1,16 @@
+A special thanks for Keith White who helped me to debug several points and add
+the support for asymetric resolution support and translate the SPL2
+documentation. Thanks again!
+
+Another thanks to Rick Richardson and its work on the JBIG algorithm also
+known as algorithm 0x13 and to Leonardo Hirokazu de Souza Hamada and its work on
+the compression algorithms 0x0D and 0x0E.
+
+Thank you to Timo Juhani Lindfors who helped me to solve lots of bugs contained
+in the SpliX 2.0.0 release candidate and to Jindrich Makovicka for the same
+reason.
+
+Other thanks to Koji Otani from BBR Inc., Japan. for bug resolution.
+
+And for the ones who helped me to write the driver files:
+	* Pablo Mazzini (Samsung SCX4500) 

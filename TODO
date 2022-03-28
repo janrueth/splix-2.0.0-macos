@@ -1,0 +1,9 @@
+08-25-2006 Aurélien Croc
+	* Add other compressin algorithms (0x12 for text!) ?
+	* Stop sending the job if a SIGTERM is received
+	* Catch for the cancel button pressed
+
+11-25-2008 Aurélien Croc
+	* Rewrite in another way the compress.cpp for generalization of the
+	  runtime compression algorithm modification
+	* Check the qpdl.cpp for a better code 

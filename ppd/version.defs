@@ -1,0 +1,12 @@
+/*
+ *      version.defs                   (C) 2007, Aurélien Croc (AP²C)
+ * 
+ * Current PPDs version
+ *
+ * $Id: version.defs 258 2009-02-06 11:38:55Z ap2c $
+ */
+
+Version "SpliX V. 2.0.0"
+
+/* vim: set expandtab tabstop=4 shiftwidth=4 smarttab tw=80 enc=utf8: */
+

@@ -1,0 +1,13 @@
+/*
+ *      manualduplex.defs              (C) 2007, Aurélien Croc (AP²C)
+ * 
+ * Manual duplex
+ *
+ * $Id: manualduplex.defs 183 2008-02-09 15:24:43Z ap2c $
+ */
+
+Duplex normal
+Attribute QPDL ManualDuplex "On"
+
+/* vim: set expandtab tabstop=4 shiftwidth=4 smarttab tw=80 enc=utf8: */
+
