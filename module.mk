@@ -53,7 +53,11 @@ endif
 
 # Get some information
 CUPSFILTER		:= `cups-config --serverbin`/filter
+ifeq ($(ARCHI),Darwin)
+CUPSPPD			:= /Library/Printers/PPDs/Contents/Resources
+else
 CUPSPPD			:= `cups-config --datadir`/model
+endif
 ifeq ($(ARCHI),Darwin)
 PSTORASTER		:= pstocupsraster
 else

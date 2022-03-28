@@ -72,27 +72,27 @@ cmd_install_dell	= INSTALL           Dell PPD files
 .PHONY: install
 install:
 	$(call printCmd, $(cmd_install_samsung))
-	$(Q)install -d -m 755 ${DESTDIR}${CUPSPPD}/samsung
+	$(Q)install -d -m 755 ${DESTDIR}${CUPSPPD}
 	$(Q)for filename in ${SAMSUNG}; do \
-		install -m 644 $$filename.${DRIVERSEXT} ${DESTDIR}${CUPSPPD}/samsung;\
+		install -m 644 $$filename.${DRIVERSEXT} ${DESTDIR}${CUPSPPD};\
 		for lang in ${LANGUAGES}; do \
-			install -m 644 $$filename$$lang.${DRIVERSEXT} ${DESTDIR}${CUPSPPD}/samsung;\
+			install -m 644 $$filename$$lang.${DRIVERSEXT} ${DESTDIR}${CUPSPPD};\
 		done; \
 	done;
 	$(call printCmd, $(cmd_install_xerox))
-	$(Q)install -d -m 755 ${DESTDIR}${CUPSPPD}/xerox
+	$(Q)install -d -m 755 ${DESTDIR}${CUPSPPD}
 	$(Q)for filename in ${XEROX}; do \
-		install -m 644 $$filename.${DRIVERSEXT} ${DESTDIR}${CUPSPPD}/xerox;\
+		install -m 644 $$filename.${DRIVERSEXT} ${DESTDIR}${CUPSPPD};\
 		for lang in ${LANGUAGES}; do \
-			install -m 644 $$filename$$lang.${DRIVERSEXT} ${DESTDIR}${CUPSPPD}/xerox;\
+			install -m 644 $$filename$$lang.${DRIVERSEXT} ${DESTDIR}${CUPSPPD};\
 		done; \
 	done;
 	$(call printCmd, $(cmd_install_dell))
-	$(Q)install -d -m 755 ${DESTDIR}${CUPSPPD}/dell
+	$(Q)install -d -m 755 ${DESTDIR}${CUPSPPD}
 	$(Q)for filename in ${DELL}; do \
-		install -m 644 $$filename.${DRIVERSEXT} ${DESTDIR}${CUPSPPD}/dell;\
+		install -m 644 $$filename.${DRIVERSEXT} ${DESTDIR}${CUPSPPD};\
 		for lang in ${LANGUAGES}; do \
-			install -m 644 $$filename$$lang.${DRIVERSEXT} ${DESTDIR}${CUPSPPD}/dell;\
+			install -m 644 $$filename$$lang.${DRIVERSEXT} ${DESTDIR}${CUPSPPD};\
 		done; \
 	done;
 
